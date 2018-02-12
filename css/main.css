@@ -1,5 +1,4 @@
 body {
-  background-color: #E5D5E3;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -30,15 +29,15 @@ body {
 }
 
 .color2 {
-  color: #D6BBD5;
+  color: #89C284;
 }
 
 .color3 {
-  color: #747573;
+  color: #3E695A;
 }
 
 .bg-hf {
-  background-color:#9D7DA4;
+  background-color:#f5f5f5;
 }
 
 ::-webkit-scrollbar {
@@ -46,7 +45,7 @@ body {
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 0 4px #D6BBD5;
+  -webkit-box-shadow: inset 0 0 0 4px #89C284;
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -67,26 +66,31 @@ a.nav-link.color-green.style {
 }
 
 a.nav-link.text-center.title.color2.color-green.style.active.show {
-  background-color: #E5D5E3;
-  border-color: #9D7DA4 #9D7DA4 #E5D5E3;
+  background-color: #fff;
+  border-color: #89C284 #89C284 #E5E5E3;
+  color: #89C284;
 }
 
 a.nav-link.text-center.title.color2.color-green.style.active.show:hover {
-  color: #DD7CA7;
+  background-color: #fff;
+  color: #89C284;
 }
 
 a:hover {
-  color: #DD7CA7;
-  border-color: #9D7DA4 #9D7DA4 #E5D5E3;
+  color: #89C284;
+  border-color: #89C284 #89C284 #E5E5E3;
   text-decoration: underline;
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-  color: #9D7DA4;
-  background-color: #E5D5E3;
-  border-color: #9D7DA4 #9D7DA4 #E5D5E3;
+  color: #89C284;
+  background-color: #fff;
+  border-color: #89C284 #89C284 #fff;
 }
 
+.nav-tabs {
+  border-bottom: 1px solid #89C284;
+}
 
 
 
