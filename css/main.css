@@ -46,6 +46,19 @@ h2.title {
   height: 8em;
 }
 
+.menu-white {
+	background-color: white;
+}
+
+.menu-white a {
+  color: #000;
+}
+
+.menu-transparent a {
+  color: #000;
+}
+
+
 ::-webkit-scrollbar {
   width: 18px;
 }
