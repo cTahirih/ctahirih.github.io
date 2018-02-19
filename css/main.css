@@ -75,7 +75,7 @@ ul.navbar-nav {
 }
 
 .modal-dialog#modal-g {
-  max-width: 90%;
+  max-width: 95%;
 }
 
 a.btn.td-btn.outline, button.btn.td-btn.outline {
@@ -87,6 +87,14 @@ a.btn.td-btn.outline, button.btn.td-btn.outline {
 a.btn.td-btn.outline:hover, button.btn.td-btn.outline:hover {
   color: #e40a8a;
   background-color: #FEDFDA;
+}
+
+.frase {
+  font-weight: bold;
+}
+
+.frase span {
+  font-size: 13px;
 }
 
 ::-webkit-scrollbar {
