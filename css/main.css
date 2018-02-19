@@ -4,6 +4,19 @@ body {
 
 .title {
   font-family: 'Unica One', cursive;
+  color: #245394;
+}
+
+.t-color {
+  color: #575B5F;
+}
+
+.icon-footer {
+  color: #575055;
+}
+
+.icon-footer:hover {
+  color: #575055;
 }
 
 .color1 {
@@ -11,7 +24,7 @@ body {
 }
 
 .dashes {
-  border-top: 2px dashed pink;
+  border-top: 3px dashed #FEDFDA;
 }
 
 .t-header {
@@ -26,12 +39,17 @@ h2.title {
   font-size: 3.4em;
 }
 
+section#portfolio {
+  background-color: #E3F2E6;
+  border-radius: 10px;
+}
+
 .jumbotron {
-  background: linear-gradient(rgba(255, 254, 253, 0.9), rgba(255, 254, 253, 0.9)), url(../assets/images/portada.jpg) center center fixed;
+  background: linear-gradient(rgba(255, 254, 253, 0.7), rgba(255, 254, 253, 0.9)), url(../assets/images/portada.jpg) center center fixed;
   background-size: cover;
   height: 100%;
   margin: 0;
-  min-height: 510px;
+  min-height: 100vh;
   position: relative;
   width: 100%;
 }
@@ -47,20 +65,32 @@ h2.title {
 }
 
 .menu-white {
-	background-color: white;
+	background-color: rgba(255, 254, 253, 0.9);
 }
 
-.menu-white a {
-  color: #000;
+
+ul.navbar-nav {
+  background-color: rgba(255, 254, 253, 0.7);
+  border-radius: 10px;
 }
 
-.menu-transparent a {
-  color: #000;
+.modal-dialog#modal-g {
+  max-width: 90%;
 }
 
+a.btn.td-btn.outline, button.btn.td-btn.outline {
+  background-color: #F3E6ED;
+  color: #688DBE;
+  font-weight: bold;
+}
+
+a.btn.td-btn.outline:hover, button.btn.td-btn.outline:hover {
+  color: #e40a8a;
+  background-color: #FEDFDA;
+}
 
 ::-webkit-scrollbar {
-  width: 18px;
+  width: 14px;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
