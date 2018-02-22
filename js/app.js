@@ -11,4 +11,8 @@ $(function() {
       $('#menu-nav').addClass('menu-transparent');
     }
   });
+
+  $(function() {
+    $('html').smoothScroll(500);
+  });
 });

@@ -2,6 +2,18 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+p, li {
+  font-size: 1.3em;
+}
+
+h3.about-title-size {
+  font-size: 2.75em;
+}
+
+.span-size {
+  font-size: 1.35em;
+}
+
 .title {
   font-family: 'Unica One', cursive;
   color: #245394;
@@ -28,7 +40,7 @@ body {
 }
 
 .t-header {
-  font-size: 1.55em;
+  font-size: 1.6em;
 }
 
 .t-jumbotron {
@@ -36,10 +48,10 @@ body {
 }
 
 h2.title {
-  font-size: 3.4em;
+  font-size: 4.4em;
 }
 
-section#portfolio {
+.portfolio-color {
   background-color: #E3F2E6;
   border-radius: 10px;
 }
@@ -55,8 +67,8 @@ section#portfolio {
 }
 
 .photo {
-  width: 12em;
-  height: 12em;
+  width: 17em;
+  height: 17em;
 }
 
 .icon-about {
@@ -97,6 +109,33 @@ a.btn.td-btn.outline:hover, button.btn.td-btn.outline:hover {
   font-size: 13px;
 }
 
+.margin-about {
+  padding-top: 10rem;
+}
+
+.margin-section {
+  margin-top: 10rem;
+}
+
+.mtop-interno {
+  margin-top: 7rem;
+}
+
+.mbm-interno {
+  margin-bottom: 7rem;
+}
+
+.carousel-indicators .active {
+  background-color: #245394;
+}
+
+.carousel-indicators li {
+  background-color: rgba(36, 83, 148, 0.5);
+}
+
+div#carouselPortfolio {
+  padding-bottom: 7rem;
+}
 ::-webkit-scrollbar {
   width: 14px;
 }
