@@ -1,6 +1,12 @@
+:root {
+  --color1: #BB0A21; 
+  --color2: #0A0908;
+  --color3: #E3D0D8;
+  --color4: #FFFBFC;
+}
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #fffefe;
+  background-color: #fff;
 }
 
 p, li {
@@ -17,15 +23,15 @@ h3.about-title-size {
 
 .title {
   font-family: 'Unica One', cursive;
-  color: #e20ba2;
+  color: var(--color1);
 }
 
 .t-color {
-  color: #575B5F;
+  color: var(--color2);
 }
 
 .icon-footer {
-  color: #e20ba2;
+  color: var(--color1);
 }
 
 .icon-footer:hover {
@@ -33,11 +39,11 @@ h3.about-title-size {
 }
 
 .color1 {
-  color: #000;
+  color: var(--color2);
 }
 
 .dashes {
-  border-top: 3px dashed #e20ba2;
+  border-top: 3px dashed var(--color1);
 }
 
 .t-header {
@@ -53,12 +59,12 @@ h2.title {
 }
 
 .portfolio-color {
-  background-color: #F4E4E9;
+  background-color: var(--color4);
   border-radius: 10px;
 }
 
 .color-t-portfolio {
-  color: #e20ba2;
+  color: var(--color1);
 }
 
 .jumbotron {
@@ -77,18 +83,11 @@ h2.title {
 }
 
 .icon-about {
-  width: 10em;
   height: 8em;
 }
 
 .menu-white {
-	background-color: rgba(255, 254, 253, 0.9);
-}
-
-
-ul.navbar-nav {
-  background-color: rgba(255, 254, 253, 0.7);
-  border-radius: 10px;
+	background-color: rgba(255, 254, 253, 1);
 }
 
 .modal-dialog#modal-g {
@@ -96,15 +95,15 @@ ul.navbar-nav {
 }
 
 a.btn.td-btn.outline, button.btn.td-btn.outline {
-    background-color: transparent;
-    color: #e20ba2;
-    font-weight: bold;
-    border: 2px solid #e20ba2;
+  background-color: transparent;
+  color: var(--color2);
+  font-weight: bold;
+  border: 2px solid var(--color1);
 }
 
 a.btn.td-btn.outline:hover, button.btn.td-btn.outline:hover {
   color: #fafafa;
-  background-color: #e20ba2;
+  background-color: var(--color1);
 }
 
 .frase {
