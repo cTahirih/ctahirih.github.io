@@ -2,11 +2,31 @@
   --color1: #BB0A21; 
   --color2: #0A0908;
   --color3: #E3D0D8;
-  --color4: #FFFBFC;
+  --color4: #fbbd5e;
 }
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #fff;
+}
+
+.text-skill {
+  color: var(--color4);
+  font-weight: bold;
+}
+
+.materialize {
+  color: #ee6e73;
+  font-weight: bold;
+}
+
+.react {
+  color: #61dafb;
+  font-weight: bold;
+}
+
+.bootsp {
+  color: #563d7c;
+  font-weight: bold;
 }
 
 h2.title {
@@ -30,14 +50,31 @@ h2.t-footer-movil {
 }
 
 .box-skills {
-  border: 2px solid var(--color1);
-  background-color: var(--color4);
-  border-top-left-radius: 30px;
+  border: 2px solid var(--color4);
+  /* border-top-left-radius: 30px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0; */
 }
 
+#portfolio .carousel-indicators {
+  bottom: 0;
+  position: relative;
+}
+#portfolio .carousel-indicators li {
+  border-radius: 20px;
+  height: 15px;
+  width: 15px;
+}
+#portfolio .carousel-indicators li.active {
+  height: 17px;
+  width: 17px;
+}
+
+.bg-about {
+  background: #fffefd url(https://github.com/tiffanyadu/portfolio/blob/master/assets/imgs/honeycomb.png?raw=true) fixed;
+  background-size: 24px;
+}
 /* .box-tech-skill {
   border: 1px solid purple;
 } */
@@ -76,7 +113,7 @@ h2.t-footer-movil {
 }
 
 .portfolio-color {
-  background-color: var(--color4);
+  background-color: var(--color3);
   border-radius: 10px;
 }
 
