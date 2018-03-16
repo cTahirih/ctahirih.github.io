@@ -9,25 +9,42 @@ body {
   background-color: #fff;
 }
 
+h2.title {
+  font-size: 4em;
+}
+
 p, li {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 h3.about-title-size {
-  font-size: 2.75em;
+  font-size: 2.5em;
+}
+
+h2.t-footer-movil {
+  font-size: 2.5em;
 }
 
 .span-size {
   font-size: 1.35em;
 }
 
+.box-skills {
+  border: 2px solid var(--color1);
+  background-color: var(--color4);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 0;
+}
+
+/* .box-tech-skill {
+  border: 1px solid purple;
+} */
+
 .title {
   font-family: 'Unica One', cursive;
   color: var(--color1);
-}
-
-.t-color {
-  color: var(--color2);
 }
 
 .icon-footer {
@@ -36,6 +53,10 @@ h3.about-title-size {
 
 .icon-footer:hover {
   color: rgba(187, 36, 41, 0.596);
+}
+
+.color-text-skills {
+  color: var(--color1);
 }
 
 .color1 {
@@ -54,17 +75,9 @@ h3.about-title-size {
   font-size: 6em;
 }
 
-h2.title {
-  font-size: 4.4em;
-}
-
 .portfolio-color {
   background-color: var(--color4);
   border-radius: 10px;
-}
-
-.color-t-portfolio {
-  color: var(--color1);
 }
 
 .jumbotron {
@@ -80,6 +93,7 @@ h2.title {
 .photo {
   width: 17em;
   height: 17em;
+  border: 2px solid var(--color1);
 }
 
 .icon-about {
@@ -87,8 +101,13 @@ h2.title {
 }
 
 .menu-white {
-	background-color: rgba(255, 254, 253, 1);
+  background-color: rgba(255, 254, 253, 1);
+  box-shadow: 0 0 0 1px rgba(187, 36, 41, 0.15);
 }
+
+/* .menu-transparent {
+  border-bottom: none;
+} */
 
 .modal-dialog#modal-g {
   max-width: 95%;
@@ -120,6 +139,7 @@ a.btn.td-btn.outline:hover, button.btn.td-btn.outline:hover {
 
 .margin-section {
   margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .mtop-interno {
@@ -131,7 +151,7 @@ a.btn.td-btn.outline:hover, button.btn.td-btn.outline:hover {
 }
 
 .carousel-indicators .active {
-  background-color: #AF5FA5;
+  background-color: var(--color1);
 }
 
 .carousel-indicators li {
@@ -146,17 +166,31 @@ div#carouselPortfolio {
   padding-bottom: 5rem;
 }
 
-/* 
-@media (min-width: 768px) {
-
-} */
+@media (min-width: 992px) {
+  h2.title {
+    font-size: 4.4em;
+  }
+  
+  p, li {
+    font-size: 1.25em;
+  }
+  
+  h3.about-title-size {
+    font-size: 2.7em;
+  }
+  
+  h2.t-footer-movil {
+    font-size: 4.4em;
+  }
+  
+} 
 
 
 ::-webkit-scrollbar {
-  width: 14px;
+  width: 9px;
 }
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 0 4px #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 0 0 3px #fff;
   background: rgba(0, 0, 0, 0.2);
 }
