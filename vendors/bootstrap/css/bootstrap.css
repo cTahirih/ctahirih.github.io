@@ -4842,14 +4842,14 @@ tbody.collapse.show {
 }
 
 .badge-primary {
-  color: #fff;
-  background-color: #007bff;
+  color: #000;
+  border: 1px solid #BB0A21;
 }
 
 .badge-primary[href]:hover, .badge-primary[href]:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #0062cc;
+  background-color: #BB0A21;
 }
 
 .badge-secondary {
