@@ -49,6 +49,10 @@ h2.t-footer-movil {
   font-size: 1.35em;
 }
 
+span.t-color.span-size {
+  color: var(--color1);
+}
+
 .box-skills {
   border: 2px solid var(--color4);
   /* border-top-left-radius: 30px;
