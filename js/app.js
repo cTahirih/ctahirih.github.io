@@ -15,4 +15,7 @@ $(function() {
   $(function() {
     $('html').smoothScroll(500);
   });
+  $('.img-scroll').smoove({rotateZ: '100deg'});
+  $('.moveleft').smoove({moveX: '15%'});
+  $('.moveright').smoove({moveX: '-15%'});
 });

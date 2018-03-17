@@ -9,6 +9,10 @@ body {
   background-color: #fff;
 }
 
+.height {
+  height: 100vh;
+}
+
 .div-section:before, .div-section:after {
   content: " ";
   display: inline-block;
