@@ -9,6 +9,16 @@ body {
   background-color: #fff;
 }
 
+.div-section:before, .div-section:after {
+  content: " ";
+  display: inline-block;
+  border: 2px solid var(--color1);
+  width: 10%;
+  margin-bottom: 9px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .text-skill {
   color: var(--color4);
   font-weight: bold;
@@ -47,6 +57,11 @@ h2.t-footer-movil {
 
 .span-size {
   font-size: 1.35em;
+  color: var(--color2);
+}
+
+.title-footer {
+  font-size: 1.25rem;
 }
 
 span.t-color.span-size {
@@ -61,22 +76,8 @@ span.t-color.span-size {
   border-bottom-left-radius: 0; */
 }
 
-#portfolio .carousel-indicators {
-  bottom: 0;
-  position: relative;
-}
-#portfolio .carousel-indicators li {
-  border-radius: 20px;
-  height: 15px;
-  width: 15px;
-}
-#portfolio .carousel-indicators li.active {
-  height: 17px;
-  width: 17px;
-}
-
 .bg-about {
-  background: #fffefd url(https://github.com/tiffanyadu/portfolio/blob/master/assets/imgs/honeycomb.png?raw=true) fixed;
+  background: #fffefd url('../assets/images/honeycomb.png') fixed;
   background-size: 24px;
 }
 /* .box-tech-skill {
@@ -119,6 +120,10 @@ span.t-color.span-size {
 .portfolio-color {
   background-color: var(--color3);
   border-radius: 10px;
+}
+
+.t-header:hover {
+  color: var(--color3);
 }
 
 .jumbotron {
@@ -166,16 +171,9 @@ a.btn.td-btn.outline:hover, button.btn.td-btn.outline:hover {
   background-color: var(--color1);
 }
 
-.frase {
-  font-weight: bold;
-}
-
-.frase span {
-  font-size: 13px;
-}
-
 .margin-about {
   padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .margin-section {
@@ -191,20 +189,26 @@ a.btn.td-btn.outline:hover, button.btn.td-btn.outline:hover {
   margin-bottom: 5rem;
 }
 
-.carousel-indicators .active {
-  background-color: var(--color1);
+#portfolio {
+  padding-top: 5rem;
 }
 
-.carousel-indicators li {
-  background-color: rgba(91, 0, 98, 0.5);
-}
-
-div#carouselPortfolio {
-  margin-bottom: 5rem;
-}
-
-div#carouselPortfolio {
+.pbotom {
   padding-bottom: 5rem;
+}
+
+.img-portfolio {
+  width: 6rem;
+}
+
+h5.card-title.text-center {
+  font-size: 1.85rem;
+}
+
+@media (max-width: 991px) {
+  div#navbarNav {
+    background-color: rgba(255, 254, 253, 0.9);
+  }  
 }
 
 @media (min-width: 992px) {
@@ -222,10 +226,8 @@ div#carouselPortfolio {
   
   h2.t-footer-movil {
     font-size: 4.4em;
-  }
-  
-} 
-
+  }  
+}
 
 ::-webkit-scrollbar {
   width: 9px;
