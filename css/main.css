@@ -230,7 +230,19 @@ h5.card-title.text-center {
   
   h2.t-footer-movil {
     font-size: 4.4em;
-  }  
+  } 
+
+  .photo {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media (min-width: 1140px) {
+  .photo {
+    width: 25rem;
+    height: 25rem;
+  }
 }
 
 ::-webkit-scrollbar {
