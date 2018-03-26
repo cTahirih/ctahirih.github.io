@@ -72,6 +72,15 @@ span.t-color.span-size {
   color: var(--color1);
 }
 
+.img-frame {
+  width: 9rem;
+  height: 9rem;
+}
+
+.mb-footer {
+  margin-bottom: 5rem;
+}
+
 .box-skills {
   border: 2px solid var(--color4);
   /* border-top-left-radius: 30px;
@@ -230,7 +239,19 @@ h5.card-title.text-center {
   
   h2.t-footer-movil {
     font-size: 4.4em;
-  }  
+  } 
+
+  .photo {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media (min-width: 1140px) {
+  .photo {
+    width: 25rem;
+    height: 25rem;
+  }
 }
 
 ::-webkit-scrollbar {
