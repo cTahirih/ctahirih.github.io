@@ -223,6 +223,12 @@ h5.card-title.text-center {
   font-size: 1.85rem;
 }
 
+@media (max-width: 576px) {
+  .t-jumbotron {
+    font-size: 4.5em;
+  }
+}
+
 @media (max-width: 991px) {
   div#navbarNav {
     background-color: rgba(255, 254, 253, 0.9);
