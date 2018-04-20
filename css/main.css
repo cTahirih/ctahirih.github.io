@@ -149,6 +149,11 @@ span.t-color.span-size {
   width: 100%;
 }
 
+.img-skills {
+  width: 6rem;
+  height: 6.5rem;
+}
+
 .photo {
   width: 17em;
   height: 17em;
@@ -216,6 +221,12 @@ a.btn.td-btn.outline:hover, button.btn.td-btn.outline:hover {
 
 h5.card-title.text-center {
   font-size: 1.85rem;
+}
+
+@media (max-width: 576px) {
+  .t-jumbotron {
+    font-size: 4.5em;
+  }
 }
 
 @media (max-width: 991px) {
