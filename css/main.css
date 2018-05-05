@@ -258,12 +258,12 @@ h5.card-title.text-center {
   }
 }
 
-/* @media (min-width: 1140px) {
+@media (min-width: 1140px) {
   .photo {
     width: auto;
-    height: 25rem;
+    height: 30em;
   }
-} */
+}
 
 ::-webkit-scrollbar {
   width: 9px;
