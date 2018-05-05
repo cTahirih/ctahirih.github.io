@@ -48,7 +48,7 @@ h2.title {
 }
 
 p, li {
-  font-size: 1.2em;
+  font-size: 1.05em;
 }
 
 h3.about-title-size {
@@ -155,9 +155,9 @@ span.t-color.span-size {
 }
 
 .photo {
-  width: 17em;
-  height: 17em;
-  border: 2px solid var(--color1);
+  width: 12em;
+  height: 18em;
+  /* border: 2px solid var(--color1); */
 }
 
 .icon-about {
@@ -241,7 +241,7 @@ h5.card-title.text-center {
   }
   
   p, li {
-    font-size: 1.25em;
+    font-size: 1.17em;
   }
   
   h3.about-title-size {
@@ -253,8 +253,8 @@ h5.card-title.text-center {
   } 
 
   .photo {
-    width: 20rem;
-    height: 20rem;
+    width: auto;
+    height: 30em;
   }
 }
 
