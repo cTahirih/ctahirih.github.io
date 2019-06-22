@@ -21,23 +21,4 @@ $(function () {
     });
   });
 
-  window.sr = ScrollReveal();
-  sr.reveal('.t-jumbotron', {
-    duration: 3000,
-    origin: 'left',
-    rotate: { x: 50, y: 0, z: 50 },
-    easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'
-  });
-  sr.reveal('.title-scroll', {
-    duration: 2000,
-    origin: 'left'
-  });
-  sr.reveal('.photo', {
-    duration: 2000,
-    origin: 'right'
-  });
-  sr.reveal('.scroll-text', {
-    duration: 2000,
-    origin: 'left'
-  });
 });
