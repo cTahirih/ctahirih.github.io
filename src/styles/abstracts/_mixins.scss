@@ -1,0 +1,207 @@
+// Mixin for color and backgrounds
+
+$colors: (
+  "white": #fff,
+);
+
+@each $name, $color in $colors {
+  .u-color-#{$name} {
+    color: $color;
+  }
+  .u-bg-#{$name} {
+    background-color: $color;
+  }
+}
+
+// Mixin padding and margin in px
+
+$spacer-base: 2px;
+$spacers: (
+  0: (
+    x: 0,
+    y: 0,
+  ),
+  2: (
+    x: $spacer-base,
+    y: $spacer-base,
+  ),
+  4: (
+    x: $spacer-base + 2,
+    y: $spacer-base + 2,
+  ),
+  6: (
+    x: $spacer-base + 4,
+    y: $spacer-base + 4,
+  ),
+  8: (
+    x: $spacer-base + 6,
+    y: $spacer-base + 6,
+  ),
+  10: (
+    x: $spacer-base + 8,
+    y: $spacer-base + 8,
+  ),
+  12: (
+    x: $spacer-base + 10,
+    y: $spacer-base + 10,
+  ),
+  14: (
+    x: $spacer-base + 12,
+    y: $spacer-base + 12,
+  ),
+  16: (
+    x: $spacer-base + 14,
+    y: $spacer-base + 14,
+  ),
+  18: (
+    x: $spacer-base + 16,
+    y: $spacer-base + 16,
+  ),
+  20: (
+    x: $spacer-base + 18,
+    y: $spacer-base + 18,
+  ),
+  22: (
+    x: $spacer-base + 20,
+    y: $spacer-base + 20,
+  ),
+  24: (
+    x: $spacer-base + 22,
+    y: $spacer-base + 22,
+  ),
+  26: (
+    x: $spacer-base + 24,
+    y: $spacer-base + 24,
+  ),
+  28: (
+    x: $spacer-base + 26,
+    y: $spacer-base + 26,
+  ),
+  29: (
+    x: $spacer-base + 29,
+    y: $spacer-base + 29,
+  ),
+  30: (
+    x: $spacer-base + 28,
+    y: $spacer-base + 28,
+  ),
+  32: (
+    x: $spacer-base + 30,
+    y: $spacer-base + 30,
+  ),
+  34: (
+    x: $spacer-base + 32,
+    y: $spacer-base + 32,
+  ),
+  36: (
+    x: $spacer-base + 34,
+    y: $spacer-base + 34,
+  ),
+  38: (
+    x: $spacer-base + 36,
+    y: $spacer-base + 36,
+  ),
+  40: (
+    x: $spacer-base + 38,
+    y: $spacer-base + 38,
+  ),
+  42: (
+    x: $spacer-base + 40,
+    y: $spacer-base + 40,
+  ),
+  44: (
+    x: $spacer-base + 42,
+    y: $spacer-base + 42,
+  ),
+  46: (
+    x: $spacer-base + 44,
+    y: $spacer-base + 44,
+  ),
+  48: (
+    x: $spacer-base + 46,
+    y: $spacer-base + 46,
+  ),
+  50: (
+    x: $spacer-base + 48,
+    y: $spacer-base + 48,
+  ),
+  52: (
+    x: $spacer-base + 50,
+    y: $spacer-base + 50,
+  ),
+  54: (
+    x: $spacer-base + 52,
+    y: $spacer-base + 52,
+  ),
+  56: (
+    x: $spacer-base + 54,
+    y: $spacer-base + 54,
+  ),
+  58: (
+    x: $spacer-base + 56,
+    y: $spacer-base + 56,
+  ),
+  60: (
+    x: $spacer-base + 58,
+    y: $spacer-base + 58,
+  ),
+  62: (
+    x: $spacer-base + 60,
+    y: $spacer-base + 60,
+  ),
+  64: (
+    x: $spacer-base + 62,
+    y: $spacer-base + 62,
+  )
+);
+
+@each $prop, $abbrev in (margin: m, padding: p) {
+  @each $size, $lengths in $spacers {
+    $length-x: map-get($lengths, x);
+    $length-y: map-get($lengths, y);
+
+    .u-#{$prop}-#{$size} {
+      #{$prop}: $length-y;
+    }
+    // a = All sides (can just use one length)
+    .u-#{$prop}-t-#{$size} {
+      #{$prop}-top: $length-y;
+    }
+    .u-#{$prop}-r-#{$size} {
+      #{$prop}-right: $length-x;
+    }
+    .u-#{$prop}-b-#{$size} {
+      #{$prop}-bottom: $length-y;
+    }
+    .u-#{$prop}-l-#{$size} {
+      #{$prop}-left: $length-x;
+    }
+
+    // Axes
+    .u-#{$prop}-x-#{$size} {
+      #{$prop}-right: $length-x;
+      #{$prop}-left: $length-x;
+    }
+
+    .u-#{$prop}-y-#{$size} {
+      #{$prop}-top: $length-y;
+      #{$prop}-bottom: $length-y;
+    }
+  }
+}
+
+// RESPONSIVE MIXIN
+@mixin respond($breakpoint) {
+  @if $breakpoint == tab-port {
+    @media only screen and (min-width: $bp-tablet_portrait) { @content };    //600px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (min-width: $bp-tablet_landscape) { @content };     //900px
+  }
+  @if $breakpoint == tab-desktop {
+    @media only screen and (min-width: $bp-desktop) { @content };    //1200px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: $bp-big-desktop) { @content };    //1800
+  }
+}

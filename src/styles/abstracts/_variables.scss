@@ -1,0 +1,33 @@
+// COLORS
+
+
+:root {
+
+}
+
+// FONT
+$default-font-size: 1.6rem;
+
+// SCREEN
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
+
+$bp-big-desktop: 112.5em; // 1800px
+$bp-desktop: 75em; // 1200px
+$bp-tablet_landscape: 56.25em; // 900px
+$bp-tablet_portrait: 37.5em; // 600px
+// GRID
