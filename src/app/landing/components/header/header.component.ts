@@ -19,20 +19,20 @@ export class HeaderComponent {
     this.sendTag( {
       section: 'headerLanding',
       socialMedia
-    })
+    }, 'viewSocialMedia')
   }
 
   scrollAboutSection() {
     this.sendTag( {
       viewAboutSection: true,
       section: 'headerLanding',
-    })
+    }, 'viewAbout')
     this.isOnClickButton.emit(true);
   }
 
-  sendTag(content: { [key: string]: any; }) {
+  sendTag(content: { [key: string]: any; }, event: string) {
     this.gtm.pushTag({
-      event: 'viewAbout',
+      event,
       content
     });
   }
