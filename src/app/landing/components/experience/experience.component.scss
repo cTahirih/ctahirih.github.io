@@ -1,0 +1,100 @@
+.heading-primary--main {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    @media screen and (min-width: 900px) {
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+  }
+  
+  .experience {
+ 
+    &__container {
+      display: block;
+      padding-left: 20px;
+      padding-right: 20px;
+  
+  
+      @media screen and (min-width: 900px) {
+        display: flex;
+        gap: 48px;
+        min-height: 100vh;
+        margin-top: 80px;
+        margin-bottom: 64px;
+        padding-left: 32px;
+        padding-right: 32px;
+      }
+  
+      @media screen and (min-width: 1440px) {
+        padding: 0 16px;
+      }
+    }
+  
+    &__title {
+      @media screen and (min-width: 900px) {
+        flex: 0 0 35%;
+        margin: 0px;
+        margin-top: 64px;
+      }
+    }
+  
+    &__cards {
+  
+      @media screen and (min-width: 900px) {
+        flex: 1 1 auto;
+      }
+  
+  
+      &--item {
+        font-size: 20px;
+        padding: 32px;
+        border-radius: 16px;
+        margin-bottom: 16px;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+  
+  
+        @media screen and (min-width: 900px) {
+          margin-bottom: 32px;
+        }
+        img {
+          max-width: 280px;
+        }
+      }
+    }
+  }
+
+  .sticky_in {
+
+    @media screen and (min-width: 900px) {
+      position: sticky;
+      z-index: 2;
+      top: 48px;
+    }
+  
+  }
+  
+  .sticky_out {
+    @media screen and (min-width: 900px) {
+      position: relative;
+      transition: all 0.3s ease;
+    }
+  }
+  
+  .sticky_in + .experience__cards {
+   
+    @media screen and (min-width: 900px) {
+      margin-left: 35%;
+    }
+  }
+  
+  .sticky_out + .experience__cards {
+    @media screen and (min-width: 900px) {
+      margin-left: 0;
+    }
+  }
+
+:host {
+    margin-left: auto;
+    margin-right: auto;
+}

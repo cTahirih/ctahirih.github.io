@@ -1,0 +1,216 @@
+.landing-max-width {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+  .header {
+    grid-column: full-start / full-end;
+    background: white;
+  
+    @media screen and (min-width: 900px) {
+      display: flex;
+      gap: 12px;
+      flex-direction: column;
+      flex-direction: row;
+      padding-left: 32px;
+      padding-right: 32px;
+      gap: 32px;
+    }
+  
+    @media screen and (min-width: 1440px) {
+      padding: 0;
+      justify-content: space-between;
+    }
+  
+  
+    &__title {
+      &--mobile {
+        display: block;
+  
+        @media screen and (min-width: 900px) {
+          display: none;
+        }
+      }
+  
+      &--desktop {
+        display: none;
+        overflow: hidden;
+        border-right: .15em solid var(--blue);
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .1em;
+        animation:
+          typing 3.5s steps(30, end),
+          blink-caret .5s step-end infinite;
+  
+        @media screen and (min-width: 900px) {
+          display: inline-block;
+        }
+  
+        @media screen and (min-width: 1200px) {
+          letter-spacing: .2em;
+        }
+      }
+    }
+  
+    &__profile-img {
+      width: 180px;
+      @media screen and (min-width: 600px) {
+        flex: 1 0 30%;
+      }
+  
+      @media screen and (min-width: 900px) {
+        max-width: 280px;
+        width: 100%;
+      }
+  
+      @media screen and (min-width: 1440px) {
+        max-width: 340px;
+        width: 100%;
+      }
+    }
+  
+    &__profile {
+      flex: 0 0 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      @media screen and (min-width: 600px) {
+        flex-direction: row;
+        gap: 24px;
+      }
+  
+      @media screen and (min-width: 900px) {
+        flex: 0 0 35%;
+        display: block;
+        margin-top: 0;
+      }
+    }
+  
+    .header__contact {
+      @media screen and (min-width: 900px) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 32px;
+        padding-right: 32px;
+      }
+  
+      .contact-card {
+        box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+        border-radius: 24px;
+        background: var(--white);
+        padding: 24px;
+        margin-top: 24px;
+  
+        @media screen and (min-width: 1440px) {
+          padding: 32px;
+        }
+  
+        &__title {
+          text-align: center;
+          margin-bottom: 24px;
+        }
+  
+        &__items {
+          transition: all 0.3s ease;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+  
+  
+          @media screen and (min-width: 900px) {
+            align-items: center;
+            flex-direction: row;
+            gap: 24px;
+            justify-content: space-between;
+          }
+  
+          &--item {
+            display: flex;
+            margin-bottom: 12px;
+            flex: 0 1 33.33%;
+            align-items: center;
+            color: var(--black);
+  
+            @media screen and (min-width: 900px) {
+              display: block;
+              text-align: center;
+              margin-bottom: 0;
+            }
+  
+            &:hover {
+              @media screen and (min-width: 900px) {
+                .card-item__text {
+                  transition: all 0.3s ease;
+                  opacity: 1;
+                  max-height: 60px;
+                }
+  
+                .card-item__icon {
+                  background-position: -120px;
+                  transition: all 0.3s ease;
+                }
+              }
+            }
+  
+            .card-item {
+              &__icon {
+                width: 32px;
+                height: auto;
+                flex: 0 0 32px;
+                margin-right: 12px;
+  
+                @media screen and (min-width: 900px) {
+                  width: 40px;
+                  transition: all 0.8s ease;
+                  margin-left: auto;
+                  margin-right: auto;
+                }
+              }
+  
+              &__text {
+                a {
+                  text-decoration: none;
+                  color: var(--black);
+                }
+  
+  
+                @media screen and (min-width: 900px) {
+                  font-size: 16px;
+                  text-align: center;
+                  color: black;
+                  opacity: 0;
+                  max-height:0;
+                  transition: all 0.3s ease;
+                }
+  
+  
+                &:hover {
+                  text-decoration: underline;
+                  color: var(--pink);
+                  a {
+                    color: var(--pink);
+                  }
+                }
+  
+              }
+            }
+          }
+  
+        }
+      }
+    }
+  }
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--blue) }
+}

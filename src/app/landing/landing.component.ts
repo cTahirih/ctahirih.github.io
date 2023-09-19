@@ -13,7 +13,6 @@ export class LandingComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-   
     if (
       document.body.scrollTop > 1100 ||
       document.documentElement.scrollTop > 1100
@@ -27,7 +26,7 @@ export class LandingComponent {
 
 
   @ViewChild('aboutSection') private aboutSection!: ElementRef;
-  scrollExperienceSection() {
+  scrollAboutSection() {
     // this.my_point_3.nativeElement.scrollIntoView({behavior: "smooth"});
     this.aboutSection?.nativeElement.scrollIntoView();
   }
