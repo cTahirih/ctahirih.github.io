@@ -7,38 +7,54 @@ body {
 
 .heading-primary {
   color: #000;
-  text-transform: uppercase;
-
-  backface-visibility: hidden;
-  margin-bottom: 6rem;
+  font-family: 'Pridi', serif;
 
   &--main {
     display: block;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 32px;
+    font-weight: 700;
 
     @include respond(tab-land) {
-      font-size: 30px;
+      font-size: 40px;
+    }
+
+    @include respond(tab-desktop) {
+      font-size: 48px;
     }
   }
 
   &--sub {
     display: block;
-    font-size: 2rem;
+    font-size: 24px;
     font-weight: 700;
+
+    @include respond(tab-land) {
+      font-size: 32px;
+    }
+
+    @include respond(tab-desktop) {
+      font-size: 40px;
+    }
   }
 }
 
 .heading-secondary {
-  font-size: 2.5rem;
-  text-transform: uppercase;
+  font-family: 'Pridi', serif;
+  font-size: 32px;
   font-weight: 700;
-  display: inline-block;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  color: var(--black);
+/*  background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
-  color: transparent;
-  letter-spacing: .2rem;
-  transition: all .2s;
+  color: transparent;*/
+  letter-spacing: .15rem;
+
+  @include respond(tab-land) {
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+  }
 }
 
 .heading-tertiary {
@@ -48,9 +64,17 @@ body {
 }
 
 .paragraph {
-  font-size: $default-font-size;
+  font-size: 16px;
 
-  &:not(:last-child) {
-    margin-bottom: 3rem;
+  @include respond(tab-port) {
+    font-size: 20px;
   }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+  }
+}
+
+.text-bold {
+  font-weight: 700;
 }

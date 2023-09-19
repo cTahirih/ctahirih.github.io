@@ -1,0 +1,45 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 16px 20px;
+    display: inline-block;
+    border-radius: 40px;
+    font-size: 16px;
+
+    // Change for the <button> element
+    border: none;
+    cursor: pointer;
+
+    @include respond(tab-land) {
+      font-size: 20px;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(#000,.2);
+  }
+
+  &--primary {
+    background-color: var(--blue);
+    color: #fff;
+
+    &::after {
+      background-color: var(--blue);
+    }
+  }
+
+  &--secondary {
+    background-color: #fff;
+    color: var(--grey);
+
+    &::after {
+      background-color: #fff;
+    }
+  }
+
+}
